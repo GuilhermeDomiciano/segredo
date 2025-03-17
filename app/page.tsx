@@ -75,7 +75,7 @@ export default function Home() {
         Estamos juntos há <span className="font-semibold">{tempoJuntos}</span>
       </p>
 
-      <p className="mt-4 text-lg italic">"Você é o meu personagem favorito"</p>
+      <p className="mt-4 text-lg italic">&quot;Você é o meu personagem favorito&quot;</p>
 
       <div className="mt-6 p-4 bg-white text-black rounded-lg shadow-lg max-w-md">
         <h2 className="text-xl font-bold mb-2">💌 Para Geis 💌</h2>
