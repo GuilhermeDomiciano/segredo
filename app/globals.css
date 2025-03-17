@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Ocultar conteúdo para telas maiores que 640px */
+@media (min-width: 641px) {
+  body::before {
+    content: "Acesse pelo celular 📱";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 9999;
+  }
+
+  #root, #__next {
+    display: none;
+  }
+}
+
+/* Animação de flutuação para os corações */
+@keyframes float {
+  0% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  position: absolute;
+  animation-name: float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
