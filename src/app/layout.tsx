@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "Meu App Mobile",
   description: "Aplicação otimizada para dispositivos móveis",
