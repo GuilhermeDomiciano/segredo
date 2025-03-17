@@ -11,10 +11,8 @@ export async function GET() {
       /\.(png|jpg|jpeg|gif)$/i.test(arquivo)
     );
 
-    console.log(imagens);  // Verifique se está retornando os nomes corretos
     return NextResponse.json({ imagens });
-  } catch (error) {
-    return NextResponse.json({ imagens: [] });
+  } catch {
+    return NextResponse.json({ imagens: [] });  
   }
 }
-

@@ -68,7 +68,7 @@ export default function Home() {
         {tocando ? "⏸️ Pausar Música" : "🎵 Tocar Música"}
       </button>
 
-      <h1 className="text-4xl font-bold mt-4">❤️ Feliz 1º Mês, Amorzinho! ❤️</h1>
+      <h1 className="text-4xl font-bold mt-4">&hearts; Feliz 1º Mês, Amorzinho! &hearts;</h1>
 
       <p className="text-lg mt-2">
         Estamos juntos há <span className="font-semibold">{tempoJuntos}</span>
