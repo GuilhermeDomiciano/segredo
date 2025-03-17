@@ -11,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     const calcularTempoJuntos = () => {
-      const inicioNamoro = new Date(2025, 1, 18)
+      const inicioNamoro = new Date(2025, 1, 18);
       const agora = new Date();
       const diff = agora.getTime() - inicioNamoro.getTime();
 
@@ -28,7 +28,6 @@ export default function Home() {
 
     return () => clearInterval(intervalo);
   }, []);
-
 
   useEffect(() => {
     const carregarFotos = async () => {
@@ -68,12 +67,13 @@ export default function Home() {
         {tocando ? "⏸️ Pausar Música" : "🎵 Tocar Música"}
       </button>
 
-      <h1 className="text-4xl font-bold mt-4">&hearts; Feliz 1º Mês, Amorzinho! &hearts;</h1>
+      <h1 className="text-4xl font-bold mt-4">
+        &hearts; Feliz 1º Mês, Amorzinho! &hearts;
+      </h1>
 
       <p className="text-lg mt-2">
         Estamos juntos há <span className="font-semibold">{tempoJuntos}</span>
       </p>
-
 
       <p className="mt-4 text-lg italic">"Você é o meu personagem favorito"</p>
 
@@ -82,7 +82,7 @@ export default function Home() {
         <p className="text-sm">
           Meu amor, cada dia ao seu lado é uma nova história incrível.
           Tivemos nosso primeiro encontro, segundo encontro, terceiro encontro e todas as outras vezes que nos encontrávamos eu me sentia cada vez mais feliz.
-          Feliz nosso primeiro mês, que seja o início de uma vida toda juntos!  
+          Feliz nosso primeiro mês, que seja o início de uma vida toda juntos!
         </p>
       </div>
 
@@ -99,7 +99,6 @@ export default function Home() {
                 alt={`Foto ${index + 1}`}
                 className="rounded-lg shadow-lg"
               />
-
             ))
           ) : (
             <p className="text-sm italic">Nenhuma foto adicionada ainda...</p>
@@ -118,7 +117,7 @@ export default function Home() {
               fontSize: `${Math.random() * 20 + 10}px`,
             }}
           >
-            ❤️
+            &hearts;
           </div>
         ))}
       </div>
