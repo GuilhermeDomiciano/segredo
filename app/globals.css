@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* Ocultar conteúdo para telas maiores que 640px */
-@media (min-width: 641px) {
+/* @media (min-width: 641px) {
   body::before {
     content: "Acesse pelo celular 📱";
     display: flex;
@@ -22,7 +22,7 @@
   #root, #__next {
     display: none;
   }
-}
+} */
 
 /* Animação de flutuação para os corações */
 @keyframes float {
